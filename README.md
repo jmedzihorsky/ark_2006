@@ -5,7 +5,7 @@ This dataset contains data published by the
 [Social Policy Analysis Centre (S.P.A.C.E.)](http://www.nspace.sk/menu.html)
 as an update of the first edition of the 
 _Atlas of Roma communities in Slovakia_.
-It data on 207 segregated settlements 
+It contains data on 207 segregated settlements 
 out of the 281 covered by the first edition
 of the _Atlas_.  Data for most of the settlements
 is available for 2004 and 2005. 
