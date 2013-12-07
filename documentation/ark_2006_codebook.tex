@@ -1,0 +1,167 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage{a4wide}
+
+\usepackage{datetime}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{float}
+
+\usepackage{charter}
+\usepackage[T1]{fontenc}
+
+
+\title{Atlas of Romani Communities in Slovakia 2006 Update Dataset}
+\author{
+	Juraj Medzihorsky \\
+	\href{mailto:medzihorsky_juraj@ceu-budapest.edu}{\texttt{medzihorsky\_juraj@ceu-budapest.edu}}
+}
+\date{\ddmmyyyydate\today~at~\currenttime}
+
+\begin{document}
+
+\maketitle
+
+\noindent
+\textbf{Cite the data \& codebook as:}
+
+\begin{itemize}
+	\item
+Medzihorsky, Juraj. (2013) \textsl{Atlas of Romani Communities in Slovakia 2006 Update Dataset}. version: \ddmmyyyydate\today~at~\currenttime
+\end{itemize}
+
+\noindent
+\textbf{The original data:}
+
+\begin{itemize}
+	\item
+Social Policy Analysis Center (SPACE). (2006). \textsl{Aktualiz\'acia Atlasu r\'omskych komun\'it na Slovensku}
+\end{itemize}
+
+
+
+\noindent
+\textbf{The first edition of the Atlas:}
+
+\begin{itemize}
+	\item
+Radi\v{c}ov\'a, Iveta. (2004). \textsl{Atlas r\'omskych komun\'it na Slovensku 2004}. [Atlas of Roma communities in Slovakia]. Bratislava: SPACE, IVO, KcpRO.
+\end{itemize}
+
+
+\noindent
+
+
+\tableofcontents
+
+
+\section{Sources}
+
+\begin{itemize}
+
+	\item	Settlement data were scraped from \href{http://www.nspace.sk/romska_komunita.html}{http://www.nspace.sk/romska\_komunita.html}.
+
+	\item 	Manual for the original data is available at \href{http://www.nspace.sk/files/atlas_osf_2006.pdf}{http://www.nspace.sk/files/atlas\_osf\_2006.pdf}.
+
+	\item	Official census territorial codes were scraped from \href{http://www.sodbtn.sk/obce/abeceda.php}{http://www.sodbtn.sk/obce/abeceda.php}
+
+\end{itemize}
+
+
+\section{Changes}
+
+\begin{enumerate}
+	\item 	Special characters removed, everything converted to ASCII encoding.
+	\item 	County name for municipality `Krasnohorske Podhradie' corrected from `Kosice - Okolie'
+			to `Roznava'
+	\item 	Added census territorial codes.	
+	\item 	Value labels Translated into English.
+\end{enumerate}
+
+
+
+\section{Waves}
+
+\begin{itemize}
+	\item	First wave:  2004.
+	\item	Second wave:  2005.
+\end{itemize}
+
+
+\section{Territorial Units}
+
+The 2006 update of the Atlas was focused on segregated communities.  
+Out of the 281 segregated communities covered by the first edition
+the update focused on 207 communities [the original manual states 
+200, but the dataset covers 207 municipalities], excluding communities 
+in Bratislava and Trencin regions, and city ghettos. 
+
+
+\begin{table}[H]
+	\label{tab:territ}
+	\caption{Territorial units: Slovak \& English terms and counts.}
+	\begin{center}
+		\begin{tabular}{l l r}
+			\toprule
+			Slovak & English & $n$ \\
+			\midrule
+			kraj	&	region 							&	6	\\
+			okres	&	county 							&	40	\\
+			obec 	&	municipality					&	207	\\
+			\bottomrule
+		\end{tabular}
+	\end{center}
+\end{table}
+
+The dataset contains settlements from the following
+six out of eight regions:
+
+\begin{table}[H]
+	\label{tab:regions}
+	\caption{Included municipalities.}
+	\begin{center}
+		\begin{tabular}{l r}
+			\toprule
+				Region & No. of Municipalities \\ 
+			\midrule
+		Banskobystricky kraj&   82	\\
+        		Kosicky kraj&  148  \\	
+		     Nitriansky kraj&    4  \\
+      		  Presovsky kraj&  160  \\
+               Trnavsky kraj&   14  \\
+               Zilinsky kraj&    8  \\
+			\bottomrule
+		\end{tabular}
+	\end{center}
+\end{table}
+
+
+
+
+\section{Coding}
+
+Variable names are modular, see Table 3 for details.
+
+\begin{table}[H]
+	\label{tab:modules}
+	\caption{Basic variable name elements.}
+	\begin{center}
+		\begin{tabular}{ll}
+			\toprule
+			Element	& Description \\		
+			\midrule
+				\texttt{sodbtn\_}	&	census territorial code 		\\
+				\texttt{name\_}		&	official territorial name 		\\
+				\texttt{type\_}		&	municipality type				\\
+				\texttt{loc\_}		&	location of Romani settlement	\\	
+				\texttt{inf\_}		&	infrastructure variable			\\
+				\texttt{rom\_}		&	Romani settlement variable		\\
+				\texttt{maj\_}		&	majority (non-Romani) part of 	\\
+									&	the municipality variable		\\
+			\bottomrule
+		\end{tabular}
+	\end{center}
+\end{table}
+
+
+\end{document}
